@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 1999-2017. Parallels IP Holdings GmbH. -->
+<module>
+    <id>default-login</id>
+    <name>Default Login Helper</name>
+    <description>This extension notifies the user on the login screen if default password is used.</description>
+    <category>auth</category>
+    <version>1.0</version>
+    <release>1</release>
+    <vendor>Plesk</vendor>
+    <plesk_min_version>17.8.7</plesk_min_version>
+</module>
