@@ -5,7 +5,9 @@ class Modules_DefaultLogin_LoginContentInclude extends pm_Hook_LoginContentInclu
 {
     public function getJsOnReadyContent()
     {
-        if (pm_Config::get('defaultPassword') != get_admin_password()) {
+        try {
+            LoginManager::get()->checkCredentials('admin', pm_Config::get('defaultPassword'));
+        } catch (Exception $exception) {
             return '';
         }
 
